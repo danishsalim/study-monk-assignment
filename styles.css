@@ -1,0 +1,290 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    margin: 0;
+    padding:0 20px;
+    
+  }
+  
+  /* Header */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+
+
+  }
+  header .container{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+    /* hero */
+    .hero{
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;  
+        background: #333;
+        color: #fff;
+        background-image: url('./public/image1');
+        background-size: cover;
+        background-position: center;
+        font-weight: bold;
+        padding: 10px ;
+        
+  }
+
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-top: 15rem;
+    animation: slide-up 2s  alternate  infinite;
+  }
+  
+  .hero p {
+    font-size: 28px;
+    /* margin-top: 300px; */
+    animation: fade-in 1s ease;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #ff5e3a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #e65229;
+  }
+  
+  /* Features */
+  #features {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  #features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    animation: slide-up 1s ease;
+  }
+  
+  .feature {
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+  }
+  
+  .feature img {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Candidate Search */
+  #search {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  #search h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    animation: slide-up 1s ease;
+  }
+  
+  #search-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center ;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+  }
+  
+  #search-form input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 300px;
+  }
+  
+   button {
+    background: #ff5e3a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    
+    
+  }
+  
+   button:hover {
+    background: #e65229;
+  }
+  
+  /* Candidate Listing */
+  #candidate-list {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  #candidate-list h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    animation: slide-up 1s ease;
+  }
+  
+  .candidate {
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+  }
+  
+  .candidate h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Benefits */
+  #benefits {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  #benefits h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    animation: slide-up 1s ease;
+  }
+  
+  .benefit {
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+  }
+  
+  .benefit img {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .benefit h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact */
+  #contact {
+    background: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    animation: slide-up 2s ease ;
+  }
+  
+  #contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: fade-in 1s ease;
+  }
+  
+  form input,
+  form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+ 
+
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Animations */
+  @keyframes slide-up {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
