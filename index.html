@@ -8,7 +8,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="main">
+  <header>
     <nav>
       <div class="container">
         <a href="#" class="logo">RecruitApp</a>
@@ -17,91 +17,131 @@
           <li><a href="#benefits">Benefits</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    
+    <button id="btn-login" class="login-btn hidden" onclick="showLogin()">Log in</button>
+    <button id="btn-logout" class="logout-btn hidden" onclick="logout()">Log out</button> 
+    <button id="btn-signup" class="signup-btn" onclick="showRegister()" >signup</button>
+    </nav> 
   </header>
 
-  <section class="hero">
- 
-      <h1>Digital Recruitment Made Easy</h1>
-      <p>Efficiently manage your hiring process with our online recruitment solution</p>
-      <a href="#contact" class="btn">Get Started</a>
-   
- </section>
+  <div class="main hidden">
+      <section class="hero">
+    
+          <h1>Digital Recruitment Made Easy</h1>
+          <p>Efficiently manage your hiring process with our online recruitment solution</p>
+          <a href="#contact" class="btn">Get Started</a>
+      
+      </section>
 
-  <section id="features">
-    <div class="container">
-      <h2>Key Features</h2>
-      <div class="feature">
-        <img src="./public/recruiter.jpg" alt="Feature 1">
-        <h3>Applicant Tracking System</h3>
-        <p>Track and manage applicants from one central dashboard.</p>
-      </div>
-      <div class="feature">
-        <img src="./public/filter.jpg" alt="Feature 2">
-        <h3>Automated Screening</h3>
-        <p>Automatically filter and screen candidates based on predefined criteria.</p>
-      </div>
-      <div class="feature">
-        <img src="./public/recruiter.jpg" alt="Feature 3">
-        <h3>Collaborative Hiring</h3>
-        <p>Effortlessly collaborate with your team members to evaluate and select the best candidates.</p>
-      </div>
-    </div>
-  </section>
+      <section id="features">
+        <div class="container">
+          <h2>Key Features</h2>
+          <div class="feature">
+            <img src="./public/recruiter.jpg" alt="Feature 1">
+            <h3>Applicant Tracking System</h3>
+            <p>Track and manage applicants from one central dashboard.</p>
+          </div>
+          <div class="feature">
+            <img src="./public/filter.jpg" alt="Feature 2">
+            <h3>Automated Screening</h3>
+            <p>Automatically filter and screen candidates based on predefined criteria.</p>
+          </div>
+          <div class="feature">
+            <img src="./public/Collaborative-Hiring.jpg" alt="Feature 3">
+            <h3>Collaborative Hiring</h3>
+            <p>Effortlessly collaborate with your team members to evaluate and select the best candidates.</p>
+          </div>
+        </div>
+      </section>
 
-  <section id="search">
-    <div class="container">
-      <h2>Candidate Search</h2>
-      <form id="search-form">
-        <input type="text" id="location-input" placeholder="Location">
-        <input type="text" id="job-role-input" placeholder="Job Role">
-        <button type="submit">Search</button>
-      </form>
-    </div>
-  </section>
+      <section id="search">
+        <div class="container">
+          <h2>Candidate Search</h2>
+          <form id="search-form">
+            <input type="text" id="location-input" placeholder="Country(india)">
+            <input type="text" id="job-role-input" placeholder="Job Role(software engineer)">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </section>
 
-  <section id="candidate-list">
-    <div class="container">
-      <h2>Candidate Listing</h2>
-      <div id="candidate-results"></div>
-    </div>
-  </section>
+      <section id="candidate-list">
+        <div class="container">
+          <h2>Candidate Listing</h2>
+          <div id="candidate-results"></div>
+        </div>
+      </section>
 
-  <section id="benefits">
-    <div class="container">
-      <h2>Benefits</h2>
-      <div class="benefit">
-        <img src="benefit1.png" alt="Benefit 1">
-        <h3>Time Saving</h3>
-        <p>Streamline your recruitment process and save valuable time.</p>
-      </div>
-      <div class="benefit">
-        <img src="benefit2.png" alt="Benefit 2">
-        <h3>Cost Effective</h3>
-        <p>Reduce costs associated with traditional recruitment methods.</p>
-      </div>
-      <div class="benefit">
-        <img src="benefit3.png" alt="Benefit 3">
-        <h3>Data-driven Decisions</h3>
-        <p>Make informed hiring decisions with data analytics and insights.</p>
-      </div>
-    </div>
-  </section>
+      <section id="benefits">
+        <div class="container">
+          <h2>Benefits</h2>
+          <div class="benefit">
+            <img src="./public/time saving.jpg" alt="Benefit 1">
+            <h3>Time Saving</h3>
+            <p>Streamline your recruitment process and save valuable time.</p>
+          </div>
+          <div class="benefit">
+            <img src="./public/cost.jpg" alt="Benefit 2">
+            <h3>Cost Effective</h3>
+            <p>Reduce costs associated with traditional recruitment methods.</p>
+          </div>
+          <div class="benefit">
+            <img src="./public/data driven.jpg" alt="Benefit 3">
+            <h3>Data-driven Decisions</h3>
+            <p>Make informed hiring decisions with data analytics and insights.</p>
+          </div>
+        </div>
+      </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Ready to simplify your recruitment process? Contact us now!</p>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>Ready to simplify your recruitment process? Contact us now!</p>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit" >Send Message</button>
+          </form>
+        </div>
+      </section>
+</div>  
+
+
+  <div class="form-wrapper ">
+    <h2>Login</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" >
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" >
+      </div>
+      <button type="submit" id="btn-login" class="login-btn">Login</button>
+    </form>
+    
+  </div> 
+  
+
+  <div class="form-register hidden">
+    <h2>Register</h2>
+    <form id="register-form">
+      <div class="form-group">
+        <label for="register-name">Name</label>
+        <input type="text" id="register-name" required>
+      </div>
+      <div class="form-group">
+        <label for="register-email">Email</label>
+        <input type="email" id="register-email" required>
+      </div>
+      <div class="form-group">
+        <label for="register-password">Password</label>
+        <input type="password" id="register-password" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
 
   <footer>
     <div class="container">
@@ -110,5 +150,6 @@
   </footer>
 
   <script src="script.js" defer></script>
+  
 </body>
 </html>

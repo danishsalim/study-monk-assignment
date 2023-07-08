@@ -115,7 +115,7 @@
   }
   
   .feature img {
-    max-width: 150px;
+    max-width: 15rem;
     margin-bottom: 20px;
   }
   
@@ -218,7 +218,7 @@
   }
   
   .benefit img {
-    max-width: 150px;
+    max-width: 15rem;
     margin-bottom: 20px;
   }
   
@@ -266,6 +266,52 @@
     padding: 20px 0;
     text-align: center;
   }
+
+  button#btn-login,
+  button#btn-logout {
+    background: #ff5e3a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  button#btn-login:hover,
+  button#btn-logout:hover {
+    background: #e65229;
+  }
+
+
+  
+
+  
+  .form-wrapper,.form-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
   
   /* Animations */
   @keyframes slide-up {
@@ -288,3 +334,7 @@
     }
   }
   
+
+  .hidden{
+    display:none;
+  }
